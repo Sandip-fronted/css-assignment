@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* background-color: black; */
+        }
+
+        
+       
+        @media (max-width:500px){
+            .parent{
+                display: block;
+                border: 2px solid red;
+
+            }
+
+           
+        }
+        
+        .parent{
+            height: 100%;
+            width: 100%;
+          margin: 5px 5px;
+          padding: 5px 5px;
+          display: grid;
+          gap: 8px;
+          grid-template-columns: repeat(3,1fr);
+          grid-auto-rows: 120px;
+         
+
+            height: 100%;
+            width: 100%;
+            grid-row: span 2;
+            background-size: cover;
+           
+
+        }
+
+
+        @media (max-width:500px){
+            .parent{
+                display: block;
+
+            }
+
+        }
+
+        .img1{
+            grid-row: span 2;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            border: 2px solid red;
+        }
+       
+        
+              .img2{
+            grid-column: span 2;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            border: 2px solid red;
+        }
+        .img3{
+            grid-column: 2/3;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            border: 2px solid red;
+        }
+        .img4{
+            grid-row: span 2;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            border: 2px solid red;
+        }
+        .img5{
+            grid-column:span 2;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            border: 2px solid red;
+        }
+        .img6{
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            border: 2px solid red;
+        }
+        .img7{
+            grid-column: span 2;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h2>(1) What are the benefits of using CSS?</h2>
+    <p>ANS =><br>1. Saparation of of Content and Presentation: CSS allows you to separate the structure and content of a web page (HTML) from its presentation and styling. This separation makes it easier to maintain and update a website since you can change the design without altering the underlying content.<br>
+
+        2. Consistency: CSS enables consistent styling across a website. By defining styles in a single CSS file, you can ensure that fonts, colors, and layout elements are applied uniformly across all pages, which enhances the overall user experience.<br>
+        
+        3. Improved Accessibility: CSS can be used to create more accessible websites by providing semantic markup for screen readers and assistive technologies. It allows for better control over the visual representation of content while preserving a logical document structure.<br>
+        
+       4.  Faster Loading Times: CSS files can be cached by browsers, which helps reduce page load times for returning visitors. This results in a more efficient and responsive user experience.<br>
+        
+       5. Responsive Design: CSS facilitates the creation of responsive web designs that adapt to different screen sizes and devices. Media queries in CSS allow you to define specific styles for various viewports, making your site mobile-friendly and ensuring a consistent experience on different devices.<br>
+        
+       6.  Efficiency and Maintainability: CSS enables you to make global design changes by modifying a single style definition. This reduces redundancy and makes your code more efficient and easier to maintain. It's especially useful for large websites and web applications.<br>
+        
+        7. Search Engine Optimization (SEO): Clean, well-structured HTML and CSS can improve SEO. Search engines favor websites with organized content and proper markup, making it easier for them to index and rank your pages.<br>
+        
+       8.  Print-Friendly Pages: CSS can be used to create printer-friendly versions of web pages, ensuring that the content is properly formatted when users print pages from your website.<br>
+        
+       9.  Cross-Browser Compatibility: CSS helps achieve consistent visual results across different web browsers. It allows you to address browser-specific issues and implement workarounds when necessary.<br>
+        
+       10.  Styling Flexibility: CSS offers a wide range of styling options, including fonts, colors, gradients, animations, transitions, and more. This flexibility allows you to create visually appealing and engaging web designs.<br>
+        
+       11.  Maintainable Code: CSS promotes a more organized and structured approach to styling, which makes your codebase cleaner and more maintainable, particularly in collaboration with other developers.<br>
+        
+       12.  Integration with Other Technologies: CSS can be easily integrated with other web technologies, such as JavaScript and HTML, to create interactive and dynamic web applications.</p><br>
+
+       <br>
+
+       <h2>(2) What are the disadvantages of css?</h2>
+       <p>ANS =><br>
+        - Browser Compatibility<br>
+        - Complexity <br>
+        - Specificity and Inheritance <br>
+        - Learning Curve <br>
+        - Performance Impact <br>
+        - Lack of Variables<br>
+        - Lack of Logic and Conditionals <br>
+        - Limited Page Layout Control <br>
+        - Debugging Challenges
+    </p>
+
+    <h2>(3) What is the difference betwwn css2 and css3?
+    </h2>
+
+    <p>ANS =><br>
+        The biggest difference between CSS2 and CSS3 is that CSS3 has been split into different sections, called modules. Each of these modules is making its way through the W3C in various stages of the recommendation process.
+    </p>
+
+    <h2> (4) Name a few css style components. </h2>
+    <p>ANS =>
+        <br>
+        - Selectors<br>
+        - Properties<br>
+        - Box Model<br>
+        - Pseudo-classes and Pseudo-elements<br>
+        - Media Queries<br>
+        - Inheritance
+    </p>
+    <h2>(5) What do you understand by CSS opacity?</h2>
+    <p>ANS =><br>
+        The CSS property for setting opacity is opacity. Here's how it works:<br>
+
+- A value of 0 makes the element fully transparent, so it is not visible at all.<br>
+- A value of 1 makes the element fully opaque, so it is completely visible.<br>
+- Values between 0 and 1 create varying degrees of transparency, allowing you to see through the element to the content or background behind it.
+    </p>
+
+    <h2>(6) how can the background color of an element be changed?</h2>
+    <p>ANS =><br>
+    - To add background color in HTML, use the CSS background-color property. Set it to the color name or code you want and place it inside a style attribute. Then add this style attribute to an HTML element, like a table, heading, div, or span tag.</p>
+    <h2>(7) how can image repetion of the backup be controlled?</h2>
+    <P>ANS =><br>
+    - This task can be achieved by using the background-repeat property that will help us to control the repetition of the image. The background-repeat property in CSS is used to repeat the background image both horizontally and vertically. It also decides whether the background image will be repeated or not.
+    </P>
+
+    <h2>(8) what is the use of the backgroun-position property?</h2>
+    <p>ANS =><br>
+    - The background-position property in CSS is mainly used to sets the initial position for the background image ie., it is used to set an image at a certain position. The position that is relative to the positioning layer, can be set by using the background-origin property.
+    </p>
+
+    <h2>(9) Which property controls the image scroll in the background?</h2>
+    <p>
+       ANS =><br>
+       - The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed. 
+
+    </p>
+
+    <h2>(10) Why should background and color be used as separete properties?</h2>
+    <p>ANS =><br>
+    - 1. It makes the style sheets more legible. Background property, which is complex in itself, becomes all the more complex with color.<br>
+   - 2. Color is an in-built property while the background is not one. And this can lead to a lot of confusion.
+    </p>
+
+    <h2>(11) How to center block elements using css1?</h2>
+    <p>ANS =>
+        <br>
+       - Approach: There are two steps to center a block-level element –<br>
+
+      - Step 1: Define the external width – We need to define the external width. Block-level elements have the default width of 100% of the webpage, so for centering the block element, we need space around it. So for generating the space, we are giving it a width.<br>
+       
+      - Step 2: Set the left-margin and the right-margin of the element to auto – Since we produced a remaining space by providing external width so now we need to align that space properly that’s why we should use margin property. Margin is a property that tells how to align a remaining space. So for centering the element you must set left-margin to auto and right-margin to auto.
+    </p>
+
+    <h2>(12) How to maintain the CSS specifications?</h2>
+    <p>ANS =><br>
+    - To maintain CSS specifications, it is important to keep up with the latest updates and changes. The World Wide Web Consortium (W3C) is responsible for maintaining the CSS specifications. You can find all the CSS specifications that the CSS Working Group is working on at 1. The page also provides a compact view of the current work and how to give feedback.
+    </p>
+
+    <h2>(13) What are the ways to integrate CSS as a web page?  
+    </h2>
+    <p> ANS =><br>
+       -  There are three ways to integrate CSS into a web page:<br>
+
+       1. Inline CSS: This approach involves adding CSS rules directly to the HTML element using the style attribute. <br>
+        
+        
+       2. Internal CSS: This approach applies CSS styles to a specific HTML document. Internal CSS is defined inside an HTML document using the style attribute within the head tag of an HTML.<br>
+        
+       3. External CSS: This approach involves defining the CSS in a separate file and linking it to the HTML document using the link tag. 
+    </p>
+
+    <h2>(14) What is embedded style sheet?</h2>
+    <p>ANS =><br>
+    - Embedded Stylesheet: It allows you to define styles for a particular HTML document as a whole in one place. This is done by embedding the (style) tags containing the CSS properties in the head of your document. Embedded style sheets are particularly useful for HTML documents that have unique style requirements from the rest of the documents in your project. However, if the styles need to be applied across multiple documents, you should link to an external style sheet instead of using individual embedded style sheets. Using embedded stylesheets holds a distinct advantage over inline styles which only allow you to address one HTML element at a time. </p>
+    <h2>(15) what are the external style sheets?</h2>
+    <p>ANS =><br>
+    - An external style sheet is a separate file linked to an HTML web page. It is a separate CSS file that can be accessed by creating a link within the head section of the webpage.</p>
+    <h2>(16) what are the advantages and the disadvantages of using external stylesheets?</h2>
+    <p>ANS =><br>
+    - External stylesheets are used to style multiple HTML pages with a single style sheet. They contain a separate CSS file with a .css extension. The CSS file contains style properties added on selectors (For example class, id, heading, … etc.).<br> <br>
+    The advantages of using external stylesheets are:<br>
+
+    -> Improved maintainability and code organization.<br>
+    ->Enhanced reusability across multiple HTML files.<br>
+    -> Efficient caching and faster page load times.<br><br>
+
+    The disadvantages of using external stylesheets are:<br>
+
+    -> Pages may not render correctly until the external CSS is loaded.<br>
+    -> Uploading or linking to multiple CSS files may increase your site’s download time, affecting its overall performance.<br>
+    -> Large-scale projects may face versioning and caching challenges when using external CSS.
+</p>
+
+<h2> (17) What is the meaning of the CSS selector?</h2>
+<p>ANS =><br>
+-> A CSS selector is a pattern used to select HTML elements that you want to style. It is the first part of a CSS rule and consists of one or more selectors separated by a comma.<br><br>
+Here are some examples of CSS selectors:<br> <br>
+
+
+-> Element Selector: Selects all elements of a specific type, such as p for paragraphs.<br>
+-> Class Selector: Selects all elements with a specific class, such as .example for elements with class=“example”.<br>
+-> ID Selector: Selects a single element with a specific ID, such as #example for an element with id=“example”.<br>
+-> Attribute Selector: Selects elements with a specific attribute, such as [href] for elements with an href attribute.<br>
+-> Pseudo-class Selector: Selects elements based on their state, such as :hover for elements being hovered over.<br>
+-> Pseudo-element Selector: Selects parts of an element, such as ::first-line for the first line of text in an element.<br>
+</p>
+
+<h2>(18)
+    What are the media types allowed by CSS?
+</h2>
+<p>ANS =><br>
+- CSS allows the following media types :<br><br>
+
+-> all: Suitable for all devices.<br>
+-> print: Intended for printers.<br>
+-> screen: Intended for computer screens, tablets, smart-phones, etc.<br>
+-> speech: Intended for screen readers that “reads” the page out loud.<br>
+-> aural: Intended for speech synthesizers.<br>
+-> braille: Intended for braille tactile feedback devices.<br>
+-> embossed: Intended for paged braille printers.<br>
+-> handheld: Intended for handheld devices (typically small screen, limited bandwidth).<br>
+-> projection: Intended for projected presentations, for example projectors.<br>
+-> tty: Intended for media using a fixed-pitch character grid, such as teletypes, terminals, or portable devices with limited display capabilities.<br>
+-> tv: Intended for television-type devices (low resolution, color, limited-scrollability screens, sound available).</p>
+
+<h2>(19) What is the rule sheet?</h2>
+<p>ANS =><br>
+- A Rulesheet contains rule statements that are linked to elements of the vocabulary the rule is built on. A Rulesheet is thus an aggregation of business rules relating to a certain aspect of the business and operating on a business vocabulary.</p>
+
+<h1 style=" text-align: center;">image gallary</h1>
+
+<div class="container">
+
+    <div class="parent">
+        <img  src="../../Image/img-1.jpeg" alt="" class="img1">
+        <img  src="../../Image/img-2.jpg" alt="" class="img2">
+        <img  src="../../Image/img-3.webp" alt="" class="img3">
+        <img  src="../../Image/img-4.jpg" alt="" class="img4">
+        <img  src="../../Image/img-5.jpeg" alt="" class="img5">
+        <img  src="../../Image/img-6.avif" alt="" class="img6">
+        <img  src="../../Image/img-7.jpeg" alt="" class="img7">
+    </div>
+</div>
+</body>
+</html>
